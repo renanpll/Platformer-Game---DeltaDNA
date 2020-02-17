@@ -21,6 +21,7 @@ namespace Platformer.Mechanics
             {
                 //Sending the event DiedByDeathzone
                 deltaDNAManager.KilledByDeathZone();
+                deltaDNAManager.MissionFailed();
 
                 var ev = Schedule<PlayerEnteredDeathZone>();
                 ev.deathzone = this;
